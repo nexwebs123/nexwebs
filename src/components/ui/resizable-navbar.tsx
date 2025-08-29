@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 
 import React, { useRef, useState } from "react";
+import { Button } from "./button";
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -127,7 +128,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300"
+          className="relative px-4 py-2 text-sm font-medium text-neutral-800 dark:text-neutral-300"
           key={`link-${idx}`}
           href={item.link}
         >
@@ -233,15 +234,14 @@ export const NavbarLogo = () => {
   return (
     <a
       href="#"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+      className="relative z-20 mr-4 flex items-center space-x-4 px-2 py-1 text-sm font-normal text-black"
     >
-      <img
-        src="https://assets.aceternity.com/logo-dark.png"
-        alt="logo"
-        width={30}
-        height={30}
-      />
-      <span className="font-medium text-black dark:text-white">Startup</span>
+      <Button variant="secondary" className="shadow-md">
+        <span className="text-lg">N</span>
+      </Button>
+      <span className="dark:text-white text-lg font-bold text-neutral-800">
+        NEXWEBS
+      </span>
     </a>
   );
 };
