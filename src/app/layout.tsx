@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import "./globals.css";
+import { Header } from "@/components/shared/navbar";
+import { GridBackground } from "@/components/grid-background";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -19,15 +21,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${nunito.className} antialiased`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${nunito.className} antialiased dark:bg-black/[0.96]`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <main>{children}</main>
+          <main className="relative z-10">
+            <Header />
+            {children}
+            <GridBackground />
+          </main>
         </ThemeProvider>
       </body>
     </html>

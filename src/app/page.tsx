@@ -1,12 +1,13 @@
-import { ModeToggle } from "@/components/theme/theme-button";
+import { HeroSection } from "@/components/shared/hero-section";
+import { Services } from "@/components/shared/services-section";
+import { MaksedDivBox } from "@/components/video/masked";
 
 export default function Home() {
   return (
-    <section>
-      <h1>NEXWEBS</h1>
-      <div className="p-4 my-2">
-        <ModeToggle />
-      </div>
+    <section className="max-w-7xl mx-auto p-4">
+      <HeroSection />
+      <MaksedDivBox />
+      <Services />
     </section>
   );
 }
