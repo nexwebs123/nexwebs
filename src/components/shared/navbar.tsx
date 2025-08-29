@@ -49,7 +49,9 @@ export function Header() {
             <NavbarButton variant="secondary">
               <ModeToggle />
             </NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <NavbarButton variant="primary" href="/#contact">
+              Get Started
+            </NavbarButton>
           </div>
         </NavBody>
         <MobileNav>
@@ -81,8 +83,9 @@ export function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
+                href="/#contact"
               >
-                Book a call
+                Get started
               </NavbarButton>
             </div>
           </MobileNavMenu>

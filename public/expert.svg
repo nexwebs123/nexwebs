@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill-rule="evenodd" stroke-linecap="round" stroke-miterlimit="10" clip-rule="evenodd" viewBox="0 0 492 476" id="expert-wp-support">
+  <path fill="none" d="M.406.858h491.375v474.364H.406z"></path>
+  <clipPath id="a">
+    <path d="M.406.858h491.375v474.364H.406z"></path>
+  </clipPath>
+  <g clip-path="url(#a)">
+    <path fill="url(#b)" d="M108.215 334.835c12.931.01 24.703 4.975 33.516 13.096l-.016-.096s25.992 5.667 39-2c-3.247 14.217-15.49 33.024-23.308 43.969-2.718 24.751-23.721 44.031-49.192 44.031h-45c-27.32 0-49.5-22.18-49.5-49.5 0-27.308 22.16-49.48 49.499-49.5h45.001Z"></path>
+    <path fill="none" stroke="#cae4ff" stroke-width="17.06" d="M77.165 236.511C70.768 126.845 155.612 37.835 257.608 37.835c101.997 0 184.681 82.777 184.681 184.888s-82.684 184.888-184.681 184.888"></path>
+    <circle cx="85.715" cy="248.835" r="23" fill="#cae4ff"></circle>
+    <circle cx="434.715" cy="248.835" r="23" fill="#cae4ff"></circle>
+    <path fill="url(#c)" d="m86.33 185.499 5.16-1.457c7.707-2.175 15.719 2.309 17.894 10.016l25.451 90.168c2.175 7.707-2.309 15.718-10.016 17.893l-5.16 1.457c-15.68 4.426-31.979-4.698-36.405-20.377l-17.301-61.296c-4.426-15.68 4.698-31.978 20.377-36.404Z"></path>
+    <ellipse cx="252.502" cy="402.831" fill="url(#d)" rx="22.979" ry="23.004"></ellipse>
+    <path fill="url(#e)" d="M352.715 117.835c18.757 1.405 22.442 24.92 23.405 35.239.318 5.538.369 7.367.189 12.198-.498 13.363-2.502 28.409-9.978 47.22l-43.616 124.343c-8.961 12.028-18.756 1.898-19.711.701l-40.283-111.02-39.222 114.619c-6.175 9.837-13.784.7-13.784.7l-56.36-145.675-12.645-34.856c-.037.083-.068.17-.105.253l-1.04-2.824-4.964-9.988c-2.165-2.739 1.373-7.499 3.299-6.977l56.382-.747c7.043-.391 7.907 10.032.84 10.875 0 0-7.106.827-15.012 1.259l47.735 142.797 28.671-86.515-20.398-56.282c-7.065-.432-13.764-1.259-13.764-1.259-7.046-.412-6.227-11.266.839-10.875 0 0 21.629-.314 34.51-.314 13.702 0 34.937.314 34.937.314 7.042-.391 7.886 10.032.823 10.875 0 0-7.087.827-14.995 1.259l47.364 141.709 13.078-43.924c6.638-17.145 9.975-31.338 9.975-42.63 0-16.301-5.839-27.587-10.813-36.364-6.634-10.854-12.859-20.046-12.862-30.922 0-12.114 9.112-23.388 22.015-23.388 1.495 0 .563-.17 5.49.199Z"></path>
+    <path fill="url(#f)" d="m423.805 183.547 5.281.929c16.046 2.822 26.766 18.118 23.944 34.164l-11.032 62.728c-2.822 16.046-18.118 26.766-34.164 23.944l-5.28-.929c-7.887-1.387-13.157-8.905-11.77-16.792l16.229-92.275c1.387-7.887 8.905-13.156 16.792-11.769Z"></path>
+    <circle cx="55.215" cy="385.335" r="10.5" fill="#00c500"></circle>
+    <circle cx="87.215" cy="385.335" r="10.5" fill="#00c500"></circle>
+    <circle cx="119.215" cy="385.335" r="10.5" fill="#00c500"></circle>
+    <clipPath id="g">
+      <circle cx="53.715" cy="383.835" r="4"></circle>
+    </clipPath>
+    <g clip-path="url(#g)">
+      <use xlink:href="#_Image8" width="8" height="8" x="49.715" y="379.835"></use>
+    </g>
+    <clipPath id="h">
+      <circle cx="85.715" cy="383.835" r="4"></circle>
+    </clipPath>
+    <g clip-path="url(#h)">
+      <use xlink:href="#_Image8" width="8" height="8" x="81.715" y="379.835"></use>
+    </g>
+    <clipPath id="i">
+      <circle cx="117.715" cy="383.835" r="4"></circle>
+    </clipPath>
+    <g clip-path="url(#i)">
+      <use xlink:href="#_Image8" width="8" height="8" x="113.715" y="379.835"></use>
+    </g>
+    <clipPath id="j">
+      <circle cx="257.215" cy="401.335" r="8.5"></circle>
+    </clipPath>
+    <g clip-path="url(#j)">
+      <use xlink:href="#_Image12" width="17" height="17" x="248.715" y="392.835"></use>
+    </g>
+    <path fill="#fff" fill-rule="nonzero" d="M259.936 36.116c33.929.105 67.483 10.015 96 28.254 1.679 1.073 3.697 2.717 1.902 4.275-.994.863-2.461.121-3.726-.694-52.764-33.829-123.264-36.553-178.516-6.418l-.982.501c-1.999.461-3.629-2.269-1.592-3.65 26.342-14.515 56.009-22.106 85.792-22.267l1.122-.001zM114.3 109.973c1.682.357 2.034 2.169.446 4.309-12.878 17.497-22.519 37.307-28.173 58.231 0 0-.693 1.47-1.917 1.479-1.24.008-2.273-.982-1.945-2.522 5.968-22.083 16.268-42.807 29.679-60.72 0 0 .627-.907 1.91-.777zm241.149 266.026c1.672.221 2.467 2.561.928 3.675-19.172 12.355-40.76 20.87-62.719 25.179 0 0-1.967-.062-2.324-1.472-.76-3.001 5.995-3.291 11.25-4.623a174.735 174.735 0 0 0 51.626-22.447s.093-.339 1.239-.312z"></path>
+  </g>
+  <defs>
+    <linearGradient id="c" x2="1" gradientTransform="rotate(78.761 -72.325 158.567)scale(105.43)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6acbff"></stop>
+      <stop offset="1" stop-color="#0094ff"></stop>
+    </linearGradient>
+    <linearGradient id="e" x2="1" gradientTransform="matrix(-9.93222 -124.1 124.1 -9.93222 276.409 237.242)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2684fb"></stop>
+      <stop offset="1" stop-color="#7ad5ff"></stop>
+    </linearGradient>
+    <linearGradient id="f" x2="1" gradientTransform="rotate(101.36 128.476 282.127)scale(98.2614)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6acbff"></stop>
+      <stop offset="1" stop-color="#0094ff"></stop>
+    </linearGradient>
+    <radialGradient id="b" cx="0" cy="0" r="1" gradientTransform="translate(85.061 341.525)scale(113.395)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#def"></stop>
+      <stop offset=".58" stop-color="#cae9ff"></stop>
+      <stop offset=".8" stop-color="#a1dfff"></stop>
+      <stop offset="1" stop-color="#7ad5ff"></stop>
+    </radialGradient>
+    <radialGradient id="d" cx="0" cy="0" r="1" gradientTransform="translate(251.921 402.589)scale(21.1793)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7ad5ff"></stop>
+      <stop offset="1" stop-color="#6acbff"></stop>
+    </radialGradient>
+  </defs>
+</svg>
