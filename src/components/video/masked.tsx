@@ -18,19 +18,7 @@ export function MaksedDivBox() {
           />
         </video>
       </MaskedDiv>
-      {/* <MaskedDiv maskType="type-4" className="my-4">
-        <video
-          className="cursor-pointer transition-all duration-300 hover:scale-105"
-          autoPlay
-          loop
-          muted
-        >
-          <source
-            src="https://videos.pexels.com/video-files/18069701/18069701-uhd_2560_1440_24fps.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </MaskedDiv>
+      {/*
       <MaskedDiv maskType="type-2" className="my-4">
         <video
           className="cursor-pointer transition-all duration-300 hover:scale-105"
