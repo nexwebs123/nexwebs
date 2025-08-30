@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -10,6 +11,16 @@ import {
 import { MessageSquare, User, Users } from "lucide-react";
 
 export function ContactCards() {
+  const message = "Hello, I want to know more!";
+
+  const handleClick = () => {
+    const url = `https://wa.me/916001612607?text=${encodeURIComponent(
+      message
+    )}`;
+    console.log(url);
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <Card>
@@ -29,7 +40,9 @@ export function ContactCards() {
           <p>Chat with our experts right now and Get your project done</p>
         </CardContent>
         <CardFooter>
-          <Button variant="secondary">Chat Now</Button>
+          <Button variant="secondary" onClick={handleClick}>
+            Chat Now
+          </Button>
         </CardFooter>
       </Card>
       <Card>
