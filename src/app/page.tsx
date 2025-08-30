@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/shared/hero-section";
 import { Services } from "@/components/shared/services-section";
+import { Solutions } from "@/components/shared/solutions-section";
 import { MaksedDivBox } from "@/components/video/masked";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <MaksedDivBox />
       <Services />
+      <Solutions />
     </section>
   );
 }
