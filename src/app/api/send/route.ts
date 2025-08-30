@@ -28,8 +28,8 @@ export async function POST(request: NextRequest) {
       );
     }
     const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["delivered@resend.dev"],
+      from: "NEXWEBS <nilavtalukdar06@imagify.space>",
+      to: [process.env.EMAIL!],
       subject: "Hello world",
       react: EmailTemplate({
         fullName: parsedBody.data.fullName,
