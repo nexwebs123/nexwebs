@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { MessageSquare, User, Users } from "lucide-react";
+import { ContactForm } from "./contact-form";
 
 export function ContactCards() {
   const message = "Hello, I want to know more!";
@@ -62,7 +63,7 @@ export function ContactCards() {
           <p>Submit your personal and project details in the form</p>
         </CardContent>
         <CardFooter>
-          <Button variant="secondary">Submit</Button>
+          <ContactForm />
         </CardFooter>
       </Card>
       <Card>
