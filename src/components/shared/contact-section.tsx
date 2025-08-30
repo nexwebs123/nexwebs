@@ -1,4 +1,5 @@
 import { Badge } from "../theme/badge";
+import { ContactCards } from "./ui/contact-cards";
 
 export function ContactUs() {
   return (
@@ -13,7 +14,9 @@ export function ContactUs() {
           Our team of experts is here to help you every step of the way.
         </p>
       </div>
-      <div className="my-6 md:my-12"></div>
+      <div className="my-6 md:my-12">
+        <ContactCards />
+      </div>
     </section>
   );
 }
