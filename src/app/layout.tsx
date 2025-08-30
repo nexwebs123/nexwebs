@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import "./globals.css";
 import { Header } from "@/components/shared/navbar";
 import { GridBackground } from "@/components/grid-background";
+import { Toaster } from "@/components/ui/sonner";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
             <Header />
             {children}
             <GridBackground />
+            <Toaster />
           </main>
         </ThemeProvider>
       </body>
