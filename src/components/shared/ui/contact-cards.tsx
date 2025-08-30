@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { MessageSquare, User, Users } from "lucide-react";
 import { ContactForm } from "./contact-form";
+import Link from "next/link";
 
 export function ContactCards() {
   const message = "Hello, I want to know more!";
@@ -79,7 +80,9 @@ export function ContactCards() {
           <p>Learn more about our experts which will get your work done</p>
         </CardContent>
         <CardFooter>
-          <Button variant="secondary">View Team</Button>
+          <Button variant="secondary" asChild>
+            <Link href="/team">View Team</Link>
+          </Button>
         </CardFooter>
       </Card>
     </section>
