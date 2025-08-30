@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import { SolutionCards } from "./ui/solution-cards";
+import MaskedDiv from "../ui/masked-div";
 
 export function Solutions() {
   return (
@@ -20,7 +21,21 @@ export function Solutions() {
       <div className="my-6 md:my-12">
         <SolutionCards />
       </div>
-      <div className="my-6 md:my-12"></div>
+      <div className="my-6 md:my-12">
+        <MaskedDiv maskType="type-2" className="my-4">
+          <video
+            className="cursor-pointer transition-all duration-300 hover:scale-105"
+            autoPlay
+            loop
+            muted
+          >
+            <source
+              src="https://videos.pexels.com/video-files/18069232/18069232-uhd_2560_1440_24fps.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </MaskedDiv>
+      </div>
       <div className="my-6 flex flex-col justify-center items-center text-center">
         <p className="text-lg text-neutral-600">
           Need a custom solution tailored to your business?
