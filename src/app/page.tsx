@@ -1,6 +1,8 @@
+import { About } from "@/components/shared/about-section";
 import { HeroSection } from "@/components/shared/hero-section";
 import { Services } from "@/components/shared/services-section";
 import { Solutions } from "@/components/shared/solutions-section";
+import { TestimonialSection } from "@/components/shared/testimonial-section";
 import { MaksedDivBox } from "@/components/video/masked";
 
 export default function Home() {
@@ -10,6 +12,8 @@ export default function Home() {
       <MaksedDivBox />
       <Services />
       <Solutions />
+      <About />
+      <TestimonialSection />
     </section>
   );
 }
