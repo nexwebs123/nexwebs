@@ -1,4 +1,5 @@
 import { About } from "@/components/shared/about-section";
+import { ContactUs } from "@/components/shared/contact-section";
 import { HeroSection } from "@/components/shared/hero-section";
 import { Services } from "@/components/shared/services-section";
 import { Solutions } from "@/components/shared/solutions-section";
@@ -14,6 +15,7 @@ export default function Home() {
       <Solutions />
       <About />
       <TestimonialSection />
+      <ContactUs />
     </section>
   );
 }

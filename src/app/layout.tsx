@@ -4,6 +4,8 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import "./globals.css";
 import { Header } from "@/components/shared/navbar";
 import { GridBackground } from "@/components/grid-background";
+import { Toaster } from "@/components/ui/sonner";
+import { QueryProvider } from "@/components/context/query-provider";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -23,18 +25,21 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${nunito.className} antialiased dark:bg-black/[0.96]`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <main className="relative z-10">
-            <Header />
-            {children}
-            <GridBackground />
-          </main>
-        </ThemeProvider>
+        <QueryProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <main className="relative z-10">
+              <Header />
+              {children}
+              <GridBackground />
+              <Toaster />
+            </main>
+          </ThemeProvider>
+        </QueryProvider>
       </body>
     </html>
   );
