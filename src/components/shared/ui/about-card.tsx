@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function AboutCard() {
   return (
-    <div className="mx-auto w-full space-y-8 px-6 md:space-y-16">
+    <div className="mx-auto w-full space-y-8 md:space-y-16">
       <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl">
         The NexWebs ecosystem unifies our software solutions.
       </h2>

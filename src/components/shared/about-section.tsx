@@ -1,4 +1,4 @@
-import { AboutCard } from "../about-card";
+import { AboutCard } from "./ui/about-card";
 
 export function About() {
   return (
