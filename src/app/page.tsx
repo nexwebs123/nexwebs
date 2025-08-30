@@ -1,3 +1,5 @@
+import { FooterSection } from "@/components/shared/footer";
+import { IntegrationsSection } from "@/components/shared/integrations";
 import { About } from "@/components/shared/about-section";
 import { ContactUs } from "@/components/shared/contact-section";
 import { HeroSection } from "@/components/shared/hero-section";
@@ -16,6 +18,8 @@ export default function Home() {
       <About />
       <TestimonialSection />
       <ContactUs />
+      <IntegrationsSection />
+      <FooterSection />
     </section>
   );
 }
