@@ -2,6 +2,7 @@ import { Badge } from "../theme/badge";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import { SolutionCards } from "./ui/solution-cards";
 
 export function Solutions() {
   return (
@@ -16,7 +17,9 @@ export function Solutions() {
           of your industry.
         </p>
       </div>
-      <div className="my-6 md:my-12"></div>
+      <div className="my-6 md:my-12">
+        <SolutionCards />
+      </div>
       <div className="my-6 md:my-12"></div>
       <div className="my-6 flex flex-col justify-center items-center text-center">
         <p className="text-lg text-neutral-600">
