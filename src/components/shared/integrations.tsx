@@ -16,7 +16,7 @@ export function IntegrationsSection() {
     <section>
       <div className="my-12 md:my-24">
         <div className="mx-auto max-w-7xl">
-          <div className="aspect-16/10 group relative mx-auto flex max-w-[22rem] items-center justify-between sm:max-w-sm">
+          <div className="aspect-16/10 group relative mx-auto flex max-w-[22rem] scale-75 sm:scale-100 items-center justify-between sm:max-w-sm">
             <div
               role="presentation"
               className="bg-linear-to-b border-foreground/5 absolute inset-0 z-10 aspect-square animate-spin items-center justify-center rounded-full border-t from-lime-500/15 to-transparent to-25% opacity-0 duration-[3.5s] group-hover:opacity-100 dark:from-white/5"
