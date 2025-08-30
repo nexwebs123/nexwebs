@@ -1,28 +1,28 @@
-import { MinimalCardContainer } from "./minimal-card";
-import MaskedDiv from "../ui/masked-div";
+import { Badge } from "../theme/badge";
+import Link from "next/link";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
-import { Badge } from "../theme/badge";
+import { SolutionCards } from "./ui/solution-cards";
+import MaskedDiv from "../ui/masked-div";
 
-export function Services() {
+export function Solutions() {
   return (
     <section className="mt-12 sm:mt-24 mb-12">
-      <Badge title="Our Services" />
+      <Badge title="Industry Solutions" />
       <div className="w-full text-center">
         <h2 className="text-3xl md:text-5xl font-semibold">
-          Related Services We Offer
+          Tailored Solutions for Every Industry
         </h2>
         <p className="mt-4 text-lg md:text-xl font-medium text-neutral-400">
-          See this section to view the services we offer that can help you take
-          a decision.
+          Specialized software solutions designed to meet the unique challenges
+          of your industry.
         </p>
       </div>
       <div className="my-6 md:my-12">
-        <MinimalCardContainer />
+        <SolutionCards />
       </div>
       <div className="my-6 md:my-12">
-        <MaskedDiv maskType="type-4" className="my-4">
+        <MaskedDiv maskType="type-2" className="my-4">
           <video
             className="cursor-pointer transition-all duration-300 hover:scale-105"
             autoPlay
@@ -30,7 +30,7 @@ export function Services() {
             muted
           >
             <source
-              src="https://videos.pexels.com/video-files/18069701/18069701-uhd_2560_1440_24fps.mp4"
+              src="https://videos.pexels.com/video-files/18069232/18069232-uhd_2560_1440_24fps.mp4"
               type="video/mp4"
             />
           </video>
