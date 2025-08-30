@@ -3,15 +3,12 @@ import MaskedDiv from "../ui/masked-div";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { Badge } from "../theme/badge";
 
 export function Services() {
   return (
     <section className="mt-12 sm:mt-24 mb-12">
-      <div className="w-full flex justify-center items-center">
-        <div className="px-4 py-2 rounded-full flex justify-center items-center gap-x-2 border text-sm font-medium bg-orange-500/10 text-orange-600 border-orange-500/30 dark:bg-orange-500/10 dark:text-orange-400 dark:border-orange-400/30 backdrop-blur-sm mb-6 sm:mb-12 animate-pulse">
-          ✨ <p>Our Services</p>
-        </div>
-      </div>
+      <Badge title="Our Services" />
       <div className="w-full text-center">
         <h2 className="text-3xl md:text-5xl font-semibold">
           Related Services We Offer
