@@ -126,7 +126,9 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit">Submit</Button>
+            <Button type="submit" className="w-full" variant="secondary">
+              Submit
+            </Button>
           </form>
         </Form>
       </DialogContent>
