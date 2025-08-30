@@ -13,7 +13,7 @@ export function MaksedDivBox() {
           muted
         >
           <source
-            src="https://www.pexels.com/download/video/31575746/"
+            src="https://ik.imagekit.io/nexwebs/banner.mp4?updatedAt=1756527198680"
             type="video/mp4"
           />
         </video>
