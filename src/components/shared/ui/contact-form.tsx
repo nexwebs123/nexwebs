@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -20,6 +21,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useMutation } from "@tanstack/react-query";
+import axios from "axios";
+import { toast } from "sonner";
+import { Loader } from "lucide-react";
 
 const formSchema = z.object({
   fullName: z.string().min(2, { message: "Name is too short" }),
@@ -34,6 +39,7 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
+  const [open, setOpen] = useState<boolean>(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,12 +50,28 @@ export function ContactForm() {
     },
   });
 
+  const mutation = useMutation({
+    mutationKey: ["email"],
+    mutationFn: async (values: z.infer<typeof formSchema>) => {
+      await axios.post("/api/send", values);
+    },
+    onSuccess: () => {
+      setOpen(false);
+      form.reset();
+      toast.success("Form Submitted Successfully");
+    },
+    onError: (error) => {
+      console.log(error);
+      toast.error("Failed to submit the form");
+    },
+  });
+
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
+    mutation.mutate(values);
   };
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button variant="secondary">Submit Form</Button>
       </DialogTrigger>
@@ -126,8 +148,17 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full" variant="secondary">
-              Submit
+            <Button
+              type="submit"
+              className="w-full"
+              variant="secondary"
+              disabled={mutation.isPending}
+            >
+              {mutation.isPending ? (
+                <Loader className="animate-spin" size={16} />
+              ) : (
+                "Submit"
+              )}
             </Button>
           </form>
         </Form>
