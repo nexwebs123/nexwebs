@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Button } from "./ui/button";
+import { Home } from "lucide-react";
 
 const members = [
   {
@@ -41,8 +43,13 @@ const members = [
 export default function TeamSection() {
   return (
     <section className="dark:bg-transparent">
+      <Link href="/">
+        <Button variant="secondary" className="mb-4 mt-6">
+          Back to Home <Home />
+        </Button>
+      </Link>
       <div className="mx-auto max-w-7xl border-t">
-        <div className="mt-12 gap-4 sm:grid sm:grid-cols-2 md:mt-24">
+        <div className="mt-6 gap-4 sm:grid sm:grid-cols-2 md:mt-12">
           <div className="sm:w-2/5">
             <h2 className="text-3xl font-bold sm:text-4xl">Our dream team</h2>
           </div>
@@ -54,7 +61,7 @@ export default function TeamSection() {
             </p>
           </div>
         </div>
-        <div className="mt-12 md:mt-24">
+        <div className="mt-12">
           <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {members.map((member, index) => (
               <div key={index} className="group overflow-hidden">
