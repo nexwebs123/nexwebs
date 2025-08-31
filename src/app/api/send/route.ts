@@ -1,9 +1,23 @@
+import arcjet, { tokenBucket } from "@arcjet/next";
 import { NextRequest, NextResponse } from "next/server";
 import { EmailTemplate } from "@/components/email/email-template";
 import { Resend } from "resend";
 import { z } from "zod";
 
 const resend = new Resend(process.env.RESEND_API_KEY!);
+
+const aj = arcjet({
+  key: process.env.ARCJET_KEY!,
+  rules: [
+    tokenBucket({
+      mode: "LIVE",
+      characteristics: ["ip.src"],
+      refillRate: 5,
+      interval: 10,
+      capacity: 10,
+    }),
+  ],
+});
 
 const requestSchema = z.object({
   fullName: z.string().min(2, { message: "name is too short" }),
@@ -19,6 +33,13 @@ const requestSchema = z.object({
 
 export async function POST(request: NextRequest) {
   try {
+    const decision = await aj.protect(request, { requested: 5 });
+    if (decision.isDenied()) {
+      return NextResponse.json(
+        { error: "Too Many Requests", reason: decision.reason },
+        { status: 429 }
+      );
+    }
     const requestBody = await request.json();
     const parsedBody = requestSchema.safeParse(requestBody);
     if (!parsedBody.success) {
