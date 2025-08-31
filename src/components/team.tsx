@@ -29,14 +29,14 @@ const members = [
     role: "PR Head",
     avatar:
       "https://ik.imagekit.io/nexwebs/WhatsApp%20Image%202025-08-31%20at%207.10.43%20PM%20(1).jpeg?updatedAt=1756650921894",
-    link: "#",
+    link: "http://www.linkedin.com/in/krititta-kashyap-deka-5a0355335",
   },
   {
     name: "Chinmoy Das",
     role: "Marketing Head",
     avatar:
       "https://ik.imagekit.io/nexwebs/WhatsApp%20Image%202025-08-31%20at%207.06.01%20PM%20(1).jpeg?updatedAt=1756650922250",
-    link: "#",
+    link: "http://www.linkedin.com/in/chinmoy-jyoti-das-634884379",
   },
 ];
 
