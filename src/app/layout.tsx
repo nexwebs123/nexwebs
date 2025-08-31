@@ -6,6 +6,7 @@ import { Header } from "@/components/shared/navbar";
 import { GridBackground } from "@/components/grid-background";
 import { Toaster } from "@/components/ui/sonner";
 import { QueryProvider } from "@/components/context/query-provider";
+import { Analytics } from "@vercel/analytics/next";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
             <main className="relative z-10">
               <Header />
               {children}
+              <Analytics />
               <GridBackground />
               <Toaster />
             </main>
