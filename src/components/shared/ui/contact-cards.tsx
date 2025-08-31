@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { MessageSquare, User, Users } from "lucide-react";
 import { ContactForm } from "./contact-form";
+import { ContactChatDialog } from "./contact-chat";
 import Link from "next/link";
 
 export function ContactCards() {
@@ -42,9 +43,7 @@ export function ContactCards() {
           <p>Chat with our experts right now and Get your project done</p>
         </CardContent>
         <CardFooter>
-          <Button variant="secondary" onClick={handleClick}>
-            Chat Now
-          </Button>
+          <ContactChatDialog />
         </CardFooter>
       </Card>
       <Card>
