@@ -47,7 +47,7 @@ export function Header() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <NavbarButton variant="secondary">
-              <ModeToggle />
+              <ModeToggle setMobileMenu={setIsMobileMenuOpen} />
             </NavbarButton>
             <NavbarButton variant="primary" href="/#contact">
               Get Started
@@ -78,7 +78,7 @@ export function Header() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <ModeToggle />
+              <ModeToggle setMobileMenu={setIsMobileMenuOpen} />
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
