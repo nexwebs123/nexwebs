@@ -22,6 +22,20 @@ const members = [
       "https://ik.imagekit.io/nexwebs/WhatsApp%20Image%202025-08-31%20at%2011.59.46%20AM.jpeg?updatedAt=1756622009640",
     link: "https://www.linkedin.com/in/nilav-talukdar/",
   },
+  {
+    name: "Krititta Deka",
+    role: "PR Head",
+    avatar:
+      "https://ik.imagekit.io/nexwebs/WhatsApp%20Image%202025-08-31%20at%207.10.43%20PM%20(1).jpeg?updatedAt=1756650921894",
+    link: "#",
+  },
+  {
+    name: "Chinmoy Das",
+    role: "Marketing Head",
+    avatar:
+      "https://ik.imagekit.io/nexwebs/WhatsApp%20Image%202025-08-31%20at%207.06.01%20PM%20(1).jpeg?updatedAt=1756650922250",
+    link: "#",
+  },
 ];
 
 export default function TeamSection() {
