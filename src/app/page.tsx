@@ -13,11 +13,19 @@ export default function Home() {
     <section className="max-w-7xl mx-auto p-4">
       <HeroSection />
       <MaksedDivBox />
-      <Services />
-      <Solutions />
-      <About />
+      <div id="services" className="w-full">
+        <Services />
+      </div>
+      <div id="solutions" className="w-full">
+        <Solutions />
+      </div>
+      <div id="about" className="w-full">
+        <About />
+      </div>
       <TestimonialSection />
-      <ContactUs />
+      <div id="contact" className="w-full">
+        <ContactUs />
+      </div>
       <IntegrationsSection />
       <FooterSection />
     </section>

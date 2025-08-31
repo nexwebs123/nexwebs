@@ -16,11 +16,11 @@ const links = [
   },
   {
     title: "About",
-    href: "#/about",
+    href: "/#about",
   },
   {
     title: "Contact",
-    href: "#/contact",
+    href: "/#contact",
   },
 ];
 
