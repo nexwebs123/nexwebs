@@ -58,9 +58,8 @@ export function ContactChatDialog() {
 
   const onSubmit = async (values: z.infer<typeof chatSchema>) => {
     setSubmitting(true);
-    const message = `Hi, I am ${values.name}, ${values.email} this is my email address, I am interested in ${values.service} for my buissness like that`;
+    const message = `Hi, I am ${values.name}, ${values.email} this is my email address, I am interested in ${values.service} for my buissness`;
     const url = `https://wa.me/916001612607?text=${encodeURIComponent(message)}`;
-    // open WhatsApp in new tab
     window.open(url, "_blank");
     setSubmitting(false);
     setOpen(false);
