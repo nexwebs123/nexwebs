@@ -18,33 +18,32 @@ export function TestimonialCards() {
           <CardContent>
             <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
               <p className="text-xl font-medium">
-                NexWebs has transformed the way we build enterprise solutions.
-                Their comprehensive suite of platforms and services has
-                significantly accelerated our digital workflow. The flexibility
-                to adapt every solution allows us to deliver unique business
-                experiences. NexWebs is truly a game-changer for modern
-                enterprises.
+                We partnered with Stayvia Business Consultancy to diagnose and
+                remove critical operational bottlenecks. Through focused
+                analysis and tailored recommendations, we streamlined their
+                processes, improved cross-team coordination, and accelerated
+                delivery of key initiatives. The outcome was measurable: higher
+                efficiency, faster time-to-market, and better customer
+                outcomes—showing how NexWebs' platform and consulting deliver
+                practical, business-first impact.
               </p>
 
               <div className="grid grid-cols-[auto_1fr] items-center gap-3">
                 <Avatar className="size-12">
                   <AvatarImage
-                    src="https://tailus.io/images/reviews/shekinah.webp"
-                    alt="Shekinah Tshiokufila"
+                    src=""
+                    alt="Stayvia Business Consultancy"
                     height="400"
                     width="400"
                     loading="lazy"
                   />
-                  <AvatarFallback>ST</AvatarFallback>
+                  <AvatarFallback>STB</AvatarFallback>
                 </Avatar>
 
                 <div>
                   <cite className="text-sm font-medium">
-                    Shekinah Tshiokufila
+                    Stayvia Business Consultancy
                   </cite>
-                  <span className="text-muted-foreground block text-sm">
-                    Software Ingineer
-                  </span>
                 </div>
               </div>
             </blockquote>
@@ -54,26 +53,26 @@ export function TestimonialCards() {
           <CardContent className="h-full pt-6">
             <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
               <p className="text-xl font-medium">
-                NexWebs is truly extraordinary and highly practical, no need to
-                overthink. A real gold mine.
+                We built SoftCrop IT LLP's website, delivering a modern,
+                responsive platform that highlights their services, improves
+                site performance, and streamlines lead capture. The new site
+                strengthened their online presence and helped accelerate client
+                acquisition for SoftCrop.
               </p>
 
               <div className="grid grid-cols-[auto_1fr] items-center gap-3">
                 <Avatar className="size-12">
                   <AvatarImage
-                    src="https://tailus.io/images/reviews/jonathan.webp"
-                    alt="Jonathan Yombo"
+                    src=""
+                    alt="SoftCrop IT LLP"
                     height="400"
                     width="400"
                     loading="lazy"
                   />
-                  <AvatarFallback>JY</AvatarFallback>
+                  <AvatarFallback>SIL</AvatarFallback>
                 </Avatar>
                 <div>
-                  <cite className="text-sm font-medium">Jonathan Yombo</cite>
-                  <span className="text-muted-foreground block text-sm">
-                    Software Ingineer
-                  </span>
+                  <cite className="text-sm font-medium">SoftCrop IT LLP</cite>
                 </div>
               </div>
             </blockquote>
@@ -83,26 +82,26 @@ export function TestimonialCards() {
           <CardContent className="h-full pt-6">
             <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
               <p>
-                Great work on NexWebs solutions. This is one of the best
-                enterprise platforms I have experienced so far!
+                We built the website for CodeWar 6.0 — the annual hackathon
+                event of the Assam Engineering College Coding Club. The site
+                provided fast registration, clear schedules, and real-time
+                updates, helping organizers manage participants seamlessly and
+                deliver a smoother event experience.
               </p>
 
               <div className="grid items-center gap-3 [grid-template-columns:auto_1fr]">
                 <Avatar className="size-12">
                   <AvatarImage
-                    src="https://tailus.io/images/reviews/yucel.webp"
-                    alt="Yucel Faruksahan"
+                    src=""
+                    alt="AEC Coding Club"
                     height="400"
                     width="400"
                     loading="lazy"
                   />
-                  <AvatarFallback>YF</AvatarFallback>
+                  <AvatarFallback>ACC</AvatarFallback>
                 </Avatar>
                 <div>
-                  <cite className="text-sm font-medium">Yucel Faruksahan</cite>
-                  <span className="text-muted-foreground block text-sm">
-                    Creator, Tailkits
-                  </span>
+                  <cite className="text-sm font-medium">AEC Coding Club</cite>
                 </div>
               </div>
             </blockquote>
@@ -112,26 +111,26 @@ export function TestimonialCards() {
           <CardContent className="h-full pt-6">
             <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
               <p>
-                Outstanding work by NexWebs. Their platform stands among the
-                most impressive business solutions I&apos;ve come across!
+                We built the AEC Robo Club website, creating a dynamic,
+                responsive showcase for their projects and events. The site
+                improved team collaboration, simplified event management, and
+                made it easier for the club to attract participants and
+                sponsors.
               </p>
 
               <div className="grid grid-cols-[auto_1fr] gap-3">
                 <Avatar className="size-12">
                   <AvatarImage
-                    src="https://tailus.io/images/reviews/rodrigo.webp"
-                    alt="Rodrigo Aguilar"
+                    src=""
+                    alt="AEC Robo Club"
                     height="400"
                     width="400"
                     loading="lazy"
                   />
-                  <AvatarFallback>YF</AvatarFallback>
+                  <AvatarFallback>ARC</AvatarFallback>
                 </Avatar>
-                <div>
-                  <p className="text-sm font-medium">Rodrigo Aguilar</p>
-                  <span className="text-muted-foreground block text-sm">
-                    Creator, TailwindAwesome
-                  </span>
+                <div className="flex itmes-center h-full flex-col justify-center">
+                  <cite className="text-sm font-medium w-fit h-fit">AEC Robo Club</cite>
                 </div>
               </div>
             </blockquote>
