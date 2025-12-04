@@ -25,12 +25,12 @@ export function Header() {
       link: "/#services",
     },
     {
-      name: "Solutions",
-      link: "/#solutions",
-    },
-    {
       name: "About",
       link: "/#about",
+    },
+    {
+      name: "Testimonials",
+      link: "/#testimonials",
     },
     {
       name: "Contact",
@@ -62,10 +62,15 @@ export function Header() {
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
+            <div className="flex items-center gap-0">
+              <NavbarButton variant="secondary">
+                <ModeToggle setMobileMenu={setIsMobileMenuOpen} />
+              </NavbarButton>
+              <MobileNavToggle
+                isOpen={isMobileMenuOpen}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              />
+            </div>
           </MobileNavHeader>
 
           <MobileNavMenu
@@ -83,7 +88,6 @@ export function Header() {
               </Link>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <ModeToggle setMobileMenu={setIsMobileMenuOpen} />
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"

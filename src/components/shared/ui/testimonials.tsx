@@ -1,48 +1,70 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 
 export function TestimonialCards() {
   return (
     <div className="mx-auto w-full space-y-8 md:space-y-16">
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-rows-2">
         <Card className="grid grid-rows-[auto_1fr] gap-8 sm:col-span-2 sm:p-6 lg:row-span-2">
-          <CardHeader>
-            <img
-              className="h-6 w-fit dark:invert"
-              src="https://html.tailus.io/blocks/customers/nike.svg"
-              alt="Nike Logo"
-              height="24"
-              width="auto"
-            />
-          </CardHeader>
-          <CardContent>
+          <CardContent className="pt-6">
             <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
-              <p className="text-xl font-medium">
-                We partnered with Stayvia Business Consultancy to diagnose and
-                remove critical operational bottlenecks. Through focused
-                analysis and tailored recommendations, we streamlined their
-                processes, improved cross-team coordination, and accelerated
-                delivery of key initiatives. The outcome was measurable: higher
-                efficiency, faster time-to-market, and better customer
-                outcomes—showing how NexWebs' platform and consulting deliver
-                practical, business-first impact.
-              </p>
+              <div className="space-y-4">
+                <Link
+                  href="https://www.thecardoctors.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative block w-full overflow-hidden rounded-lg transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20"
+                >
+                  <Image
+                    src="/work/tcd.png"
+                    alt="The Car Doctors Website"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto rounded-lg transition-all duration-500 group-hover:brightness-75"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 transition-all duration-500 group-hover:opacity-100">
+                    <div className="flex flex-col items-center gap-3 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                      <div className="flex items-center gap-2 text-white font-semibold text-lg md:text-xl">
+                        <span>View Live Project</span>
+                        <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
+                      </div>
+                      <div className="w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-all duration-500 delay-100" />
+                    </div>
+                  </div>
+                </Link>
+                <p className="text-xl font-medium">
+                  Running a car detailing and modification shop means we're
+                  always juggling customer bookings, showcasing our work, and
+                  keeping our brand sharp. NexWebs built us a website that
+                  actually works for our business—it's fast, looks professional,
+                  and makes it super easy for customers to see what we do and
+                  book services. The site showcases our detailing work beautifully
+                  and helps us stand out in a competitive market. Since going
+                  live, we've seen more inquiries and bookings, and honestly, it
+                  just makes us look more legit. The team understood our vibe and
+                  delivered something that fits our brand perfectly.
+                </p>
+              </div>
 
               <div className="grid grid-cols-[auto_1fr] items-center gap-3">
                 <Avatar className="size-12">
                   <AvatarImage
-                    src=""
-                    alt="Stayvia Business Consultancy"
+                    src="/work/logo.png"
+                    alt="The Car Doctors"
                     height="400"
                     width="400"
                     loading="lazy"
                   />
-                  <AvatarFallback>STB</AvatarFallback>
+                  <AvatarFallback>TCD</AvatarFallback>
                 </Avatar>
 
                 <div>
                   <cite className="text-sm font-medium">
-                    Stayvia Business Consultancy
+                    The Car Doctors
                   </cite>
                 </div>
               </div>

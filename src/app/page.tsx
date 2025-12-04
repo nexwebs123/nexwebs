@@ -22,7 +22,9 @@ export default function Home() {
       <div id="about" className="w-full">
         <About />
       </div>
-      <TestimonialSection />
+      <div id="testimonials" className="w-full">
+        <TestimonialSection />
+      </div>
       <div id="contact" className="w-full">
         <ContactUs />
       </div>
