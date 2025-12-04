@@ -11,29 +11,8 @@ const members = [
     link: "https://www.linkedin.com/in/shayandutta10/",
   },
   {
-    name: "Suksham Upamanyu",
-    role: "Co-Founder and COO",
-    avatar:
-      "https://ik.imagekit.io/nexwebs/WhatsApp%20Image%202025-08-31%20at%2011.58.46%20AM.jpeg?updatedAt=1756622009585",
-    link: "https://www.linkedin.com/in/suksham-upamanyu-58b930258/",
-  },
-  {
-    name: "Nilav Talukdar",
-    role: "Software Engineer",
-    avatar:
-      "https://ik.imagekit.io/nexwebs/WhatsApp%20Image%202025-08-31%20at%2011.59.46%20AM.jpeg?updatedAt=1756622009640",
-    link: "https://www.linkedin.com/in/nilav-talukdar/",
-  },
-  {
-    name: "Krititta Deka",
-    role: "PR Head",
-    avatar:
-      "https://ik.imagekit.io/nexwebs/WhatsApp%20Image%202025-08-31%20at%207.10.43%20PM%20(1).jpeg?updatedAt=1756650921894",
-    link: "http://www.linkedin.com/in/krititta-kashyap-deka-5a0355335",
-  },
-  {
     name: "Chinmoy Das",
-    role: "Marketing Head",
+    role: "Co-Founder & CMO",
     avatar:
       "https://ik.imagekit.io/nexwebs/WhatsApp%20Image%202025-08-31%20at%207.06.01%20PM%20(1).jpeg?updatedAt=1756650922250",
     link: "http://www.linkedin.com/in/chinmoy-jyoti-das-634884379",
@@ -80,12 +59,12 @@ export default function TeamSection() {
                     <span className="text-xs">_0{index + 1}</span>
                   </div>
                   <div className="mt-1 flex items-center justify-between">
-                    <span className="text-muted-foreground inline-block translate-y-6 text-sm opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                    <span className="text-muted-foreground inline-block translate-y-0 text-sm opacity-100 transition duration-300 sm:translate-y-6 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100">
                       {member.role}
                     </span>
                     <Link
                       href={member.link}
-                      className="group-hover:text-primary-600 dark:group-hover:text-primary-400 inline-block translate-y-8 text-sm tracking-wide opacity-0 transition-all duration-500 hover:underline group-hover:translate-y-0 group-hover:opacity-100"
+                      className="group-hover:text-primary-600 dark:group-hover:text-primary-400 inline-block translate-y-0 text-sm tracking-wide opacity-100 transition-all duration-500 hover:underline sm:translate-y-8 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100"
                     >
                       {" "}
                       Linkedin
