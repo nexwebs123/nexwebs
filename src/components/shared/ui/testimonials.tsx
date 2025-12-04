@@ -16,23 +16,23 @@ export function TestimonialCards() {
                   href="https://www.thecardoctors.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative block w-full overflow-hidden rounded-lg transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20"
+                  className="group relative block w-full overflow-hidden rounded-lg transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20 active:scale-[0.98]"
                 >
                   <Image
                     src="/work/tcd.png"
                     alt="The Car Doctors Website"
                     width={800}
                     height={600}
-                    className="w-full h-auto rounded-lg transition-all duration-500 group-hover:brightness-75"
+                    className="w-full h-auto rounded-lg transition-all duration-500 md:group-hover:brightness-75 brightness-75 md:brightness-100"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 transition-all duration-500 group-hover:opacity-100">
-                    <div className="flex flex-col items-center gap-3 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-100 md:opacity-0 transition-all duration-500 md:group-hover:opacity-100">
+                    <div className="flex flex-col items-center gap-3 transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-all duration-500">
                       <div className="flex items-center gap-2 text-white font-semibold text-lg md:text-xl">
                         <span>View Live Project</span>
-                        <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
+                        <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 transform translate-x-1 -translate-y-1 md:translate-x-0 md:translate-y-0 md:group-hover:translate-x-1 md:group-hover:-translate-y-1 transition-all duration-300" />
                       </div>
-                      <div className="w-12 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-all duration-500 delay-100" />
+                      <div className="w-12 h-0.5 bg-primary transform scale-x-100 md:scale-x-0 md:group-hover:scale-x-100 transition-all duration-500 md:delay-100" />
                     </div>
                   </div>
                 </Link>
@@ -40,13 +40,14 @@ export function TestimonialCards() {
                   Running a car detailing and modification shop means we're
                   always juggling customer bookings, showcasing our work, and
                   keeping our brand sharp. NexWebs built us a website that
-                  actually works for our business—it's fast, looks professional,
+                  actually works for our business, it's fast, looks professional,
                   and makes it super easy for customers to see what we do and
-                  book services. The site showcases our detailing work beautifully
-                  and helps us stand out in a competitive market. Since going
-                  live, we've seen more inquiries and bookings, and honestly, it
-                  just makes us look more legit. The team understood our vibe and
-                  delivered something that fits our brand perfectly.
+                  book services. The site showcases our detailing work
+                  beautifully and helps us stand out in a competitive market.
+                  Since going live, we've seen more inquiries and bookings, and
+                  honestly, it just makes us look more legit. The team
+                  understood our vibe and delivered something that fits our
+                  brand perfectly.
                 </p>
               </div>
 
@@ -63,9 +64,7 @@ export function TestimonialCards() {
                 </Avatar>
 
                 <div>
-                  <cite className="text-sm font-medium">
-                    The Car Doctors
-                  </cite>
+                  <cite className="text-sm font-medium">The Car Doctors</cite>
                 </div>
               </div>
             </blockquote>
@@ -152,7 +151,9 @@ export function TestimonialCards() {
                   <AvatarFallback>ARC</AvatarFallback>
                 </Avatar>
                 <div className="flex itmes-center h-full flex-col justify-center">
-                  <cite className="text-sm font-medium w-fit h-fit">AEC Robo Club</cite>
+                  <cite className="text-sm font-medium w-fit h-fit">
+                    AEC Robo Club
+                  </cite>
                 </div>
               </div>
             </blockquote>
