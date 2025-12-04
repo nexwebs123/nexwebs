@@ -11,8 +11,7 @@ import { Badge } from "../theme/badge";
 
 export function HeroSection() {
   return (
-    <section className="w-full my-6">
-      <Badge title="#1 B2B Software Solutions Provider" />
+    <section className="w-full my-6 pt-24 md:pt-32">
       <div className="max-w-3xl mx-auto text-center text-5xl sm:text-6xl md:text-8xl leading-1.2 font-semibold md:font-bold">
         Transform Your <AuroraText>Business Digital</AuroraText>
         <p>Experience</p>

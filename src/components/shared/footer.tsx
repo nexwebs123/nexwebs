@@ -11,16 +11,20 @@ const links = [
     href: "/#services",
   },
   {
-    title: "Solutions",
-    href: "/#solutions",
-  },
-  {
     title: "About",
     href: "/#about",
   },
   {
+    title: "Testimonials",
+    href: "/#testimonials",
+  },
+  {
     title: "Contact",
     href: "/#contact",
+  },
+  {
+    title: "Team",
+    href: "/team",
   },
 ];
 
@@ -67,7 +71,7 @@ export function FooterSection() {
             </svg>
           </Link>
           <Link
-            href="https://www.instagram.com/nex_webs/"
+            href="https://www.instagram.com/nex.webs/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"

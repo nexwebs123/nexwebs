@@ -10,9 +10,46 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
-import { useState } from "react";
+import { useState, Dispatch, SetStateAction } from "react";
 import { ModeToggle } from "../theme/theme-button";
 import Link from "next/link";
+import { motion, AnimatePresence } from "motion/react";
+
+// Component for right-side nav actions that conditionally shows Get Started button
+function RightNavActions({
+  visible,
+  setIsMobileMenuOpen,
+}: {
+  visible?: boolean;
+  setIsMobileMenuOpen: Dispatch<SetStateAction<boolean>>;
+}) {
+  return (
+    <div className="flex items-center gap-3">
+      <AnimatePresence>
+        {!visible && (
+          <motion.div
+            initial={{ opacity: 0, width: 0, x: -10 }}
+            animate={{ opacity: 1, width: "auto", x: 0 }}
+            exit={{ opacity: 0, width: 0, x: -10 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 35,
+            }}
+            className="overflow-hidden"
+          >
+            <NavbarButton variant="primary" href="/#contact">
+              Get Started
+            </NavbarButton>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <NavbarButton variant="secondary">
+        <ModeToggle setMobileMenu={setIsMobileMenuOpen} />
+      </NavbarButton>
+    </div>
+  );
+}
 
 export function Header() {
   const navItems = [
@@ -50,14 +87,7 @@ export function Header() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">
-              <ModeToggle setMobileMenu={setIsMobileMenuOpen} />
-            </NavbarButton>
-            <NavbarButton variant="primary" href="/#contact">
-              Get Started
-            </NavbarButton>
-          </div>
+          <RightNavActions setIsMobileMenuOpen={setIsMobileMenuOpen} />
         </NavBody>
         <MobileNav>
           <MobileNavHeader>
